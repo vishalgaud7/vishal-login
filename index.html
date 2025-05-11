@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"href="index.css">
+</head>
+<form  onsubmit="return ram()" action="http://127.0.0.1:5501/">
+<body><div class="first">
+    <div class="k">
+        <img src="https://i.pinimg.com/736x/31/46/49/3146494054a879448f2701e6954774a3.jpg"width="500" height="550">
+        <p></p>
+    </div>
+    <div class="r">
+         
+        <h1>ogi</h1>
+        <input type="text"placeholder="Name"id="n1" onblur="r()"><br>
+        <h3><input type="text"placeholder="Father name"id="n2"onblur="r()"></h3>
+        <h5><input type="Password"placeholder="Password"id="n3"></h5>
+        <button type="submit"onclick="return p()">Login</button>
+        <h4><button type="reset" id="h2">Reset</button></h4>
+        <h6><input type="text" id="n5" placeholder="age"></h6>
+        
+    </div>
+    </div>
+    <script>
+        function ram(){
+            let a=document.getElementById("n1").value;
+            let b=document.getElementById("n2").value;
+            let c=document.getElementById("n3").value;
+            
+            if(a==""){
+                alert(` Name is not fill`);
+                return false;
+            }
+            else{
+                true;
+            }
+             
+            if(b==""){
+                alert(`Father name is not fill`);
+                return false;
+            }
+            else{
+                true;
+            }
+
+
+            if(c==""){
+                alert(`Password is not fill`);
+                return false;
+            }
+            else{
+                true;
+            }
+
+           
+        }
+          function r(){
+            let a=document.getElementById("n1");
+            let b=document.getElementById("n2");
+            a.value=a.value.toUpperCase();
+            b.value=b.value.toUpperCase();
+          }
+          function p(){
+            let a=document.getElementById("n5").value;
+            if(a<=17||a==""){
+                alert(`Your Age is:${a} (You are not adult)`);
+                return false;
+            }
+            else{
+                true;
+            }
+    
+
+             letc=b!=45? "not":"yes";
+}
+          
+    </script>
+</body>
+</form>
+</html>
